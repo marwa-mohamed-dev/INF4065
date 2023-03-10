@@ -1,5 +1,6 @@
 from dictionnaire import dico
 from brute_force import bf
+import gpu
 
 open('motnombre.txt', 'w').close()
 open('perso1.txt', 'w').close()
@@ -37,7 +38,8 @@ Mode = input(
 	)
 
 if Mode == '1' :
-		bf(HASH, mdp)
+    	gpu.combinaisons[5,5](mdp, HASH)
+		#bf(HASH, mdp)
 
 elif Mode == '2':
     dico(HASH, mdp)
