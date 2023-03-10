@@ -1,6 +1,5 @@
 from numba import cuda
 import brute_force as bf
-import verification as verif
 
 
 @cuda.jit 
