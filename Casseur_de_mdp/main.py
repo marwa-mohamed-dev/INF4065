@@ -38,7 +38,7 @@ Mode = input(
 	)
 
 if Mode == '1' :
-    	gpu.combinaisons[5,5](mdp, HASH)
+    	gpu.kernel_combinaisons[5,5](mdp, HASH)
 		#bf(HASH, mdp)
 
 elif Mode == '2':
